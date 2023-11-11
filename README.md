@@ -99,3 +99,17 @@ SELECT state, COUNT(call_center) AS Call_Center_by_City
 	GROUP BY 
 	state
 ```
+
+### Reason for Calling by Call_Center
+
+```SQL
+SELECT 
+		reason, COUNT(call_center) As Call_Reason
+	FROM 
+		call_center.dbo.call_center
+	GROUP BY
+			reason
+	ORDER BY
+			reason ASC;
+
+```

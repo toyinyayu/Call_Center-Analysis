@@ -1,4 +1,4 @@
-![1698093059989](https://github.com/toyinyayu/Call_Center-Analysis/assets/31111105/34e0cbaa-b28e-4c60-aec1-5bddced03458)# Call Center Data Analysis
+# Call Center Data Analysis
 ##Table of Content
 - [Project Overview](#project-overview)
 - [Data Source](#data-source)

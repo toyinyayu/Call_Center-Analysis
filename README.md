@@ -94,22 +94,35 @@ SELECT channel, COUNT(call_center) AS call_channel_by_call_center
 
 ```SQL
 SELECT state, COUNT(call_center) AS Call_Center_by_City
-	FROM
-		call_center.dbo.call_center
-	GROUP BY 
-	state
+FROM
+call_center.dbo.call_center
+GROUP BY 
+state
+ORDER BY
+state ASC;
 ```
 
 ### Reason for Calling by Call_Center
 
 ```SQL
-SELECT 
-		reason, COUNT(call_center) As Call_Reason
-	FROM 
-		call_center.dbo.call_center
-	GROUP BY
-			reason
-	ORDER BY
-			reason ASC;
+SELECT reason, COUNT(call_center) As Call_Reason
+FROM 
+call_center.dbo.call_center
+GROUP BY reason
+ORDER BY reason ASC;
 
 ```
+
+### Response Time by Call_Center
+
+```SQL
+SELECT 
+response_time, COUNT(call_center) As Call_Response_Time
+FROM 
+call_center.dbo.call_center
+GROUP BY response_time
+ORDER BY response_time DESC;
+
+```
+
+## Recommendation

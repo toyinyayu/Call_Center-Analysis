@@ -1,4 +1,4 @@
-# Call Center Data Analysis
+![1698093059989](https://github.com/toyinyayu/Call_Center-Analysis/assets/31111105/34e0cbaa-b28e-4c60-aec1-5bddced03458)# Call Center Data Analysis
 ##Table of Content
 - [Project Overview](#project-overview)
 - [Data Source](#data-source)
@@ -12,6 +12,9 @@
 ### Project Overview
 This projects shows the analysis of a Call Center for October, 2020. In full details of the necessary KPIs needed to drive 
 the growth and relevant Decision Making 
+
+![1698093059989](https://github.com/toyinyayu/Call_Center-Analysis/assets/31111105/0754bdf3-6fa4-44fb-ab47-4c4e07ad6b76)
+
 
 ### Data Source
 The primary source for the data is "call-center.csv" files, containing the day to day details of aall customers calls for the month of October 2020.

@@ -89,3 +89,13 @@ SELECT channel, COUNT(call_center) AS call_channel_by_call_center
   ORDER BY call_channel_by_call_center DESC
 
 ```
+
+### Details of State by Call_Centers
+
+```SQL
+SELECT state, COUNT(call_center) AS Call_Center_by_City
+	FROM
+		call_center.dbo.call_center
+	GROUP BY 
+	state
+```

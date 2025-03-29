@@ -52,19 +52,20 @@ SELECT COUNT(id) AS Total_Calls
 
 ```SQL
 SELECT 
-	ROUND(AVG(CAST(csat_score AS DECIMAL(10, 2))), 2) AS Avg_Satisfactory_Call
- FROM call_center.dbo.call_center
- WHERE csat_score IS NOT NULL AND csat_score <> 0 ;
+    ROUND(AVG(NULLIF(csat_score, 0) * 1.0), 2) AS Avg_Satisfactory_Call
+FROM call_center.dbo.call_center
+WHERE csat_score IS NOT NULL;
 
 ```
 
 ### Average Call Duration by Mins
 
 ```SQL
-SELECT 
-	ROUND(AVG(CAST(call_duration AS DECIMAL(10, 2))), 2) AS Avg_Call_Duration_by_Mins
-  FROM
-	call_center.dbo.call_center;
+ELECT 
+    ROUND(AVG(call_duration * 1.0), 2 )
+	AS Call_Duration_In_Min
+FROM call_center.dbo.call_center
+WHERE call_duration IS NOT NULL;
 
 ```
 
